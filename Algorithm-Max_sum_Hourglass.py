@@ -2,7 +2,7 @@ def hourglass(arr):
     # Iniatialze the result value as 0
     result = 0
 
-    # We are considering only inner matrix for time efficiency i.e, from arr[1][1] till arr[len(arr[0] - 1)][len(arr[0] - 1)]
+    # We are considering only inner matrix i.e, from arr[1][1] till arr[len(arr[0] - 1)][len(arr[0] - 1)]
     # That is we are neglecting the outer boundary of the array in this for loop.
     # The shape of hourglass is:
     """   
