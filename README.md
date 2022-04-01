@@ -67,7 +67,7 @@ Print the largest (maximum) hourglass sum found in arr.
 
 # Explanation
 arr contains the following hourglasses:\
-'''
+```
 1 1 1  1 1 0  1 0 0  0 0 0\
   1      0      0      0  \
 1 1 1  1 1 0  1 0 0  0 0 0\
@@ -82,5 +82,5 @@ arr contains the following hourglasses:\
                           \
 0 0 2  0 2 4  2 4 4  4 4 0\
   0      0      2      0  \
-0 0 1  0 1 2  1 2 4  2 4 0\  
-'''
+0 0 1  0 1 2  1 2 4  2 4 0  
+```
