@@ -36,9 +36,11 @@ The ((n - 2) * (n - 2)) hourglass sums are:\
 ```
 The highest hourglass sum is  from the hourglass beginning at (1,1) and ends at (n-2,n-2) :
 Here n is the length of row/column
-0 4 3\
-  1  \
-8 6 6\
+```
+0 4 3
+  1  
+8 6 6
+```
 Note: If you have already solved the Java domain's Java 2D Array challenge, you may wish to skip this challenge.
 
 # Function Description
