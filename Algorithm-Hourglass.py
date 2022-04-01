@@ -10,20 +10,20 @@ def hourglass(arr):
           d
         e f g 
     """
-    # If arr[i][j] == 1, we have to check all the surrounding values i.e., a,b,c,e,f and j are == 1 or not..
+    # val = arr[i][j] , we have to check all the surrounding values i.e., a,b,c,e,f and j are == val or not..
     # If so increment the result value by 1
     for i in range(1, len(arr) - 1):
         for j in range(1, len(arr[0])-1):
-            if arr[i][j] == 1:
-                a = arr[i - 1][j - 1]
-                b = arr[i - 1][j]
-                c = arr[i - 1][j + 1]
-                e = arr[i + 1][j - 1]
-                f = arr[i + 1][j]
-                g = arr[i + 1][j + 1]
+            val = arr[i][j]
+            a = arr[i - 1][j - 1]
+            b = arr[i - 1][j]
+            c = arr[i - 1][j + 1]
+            e = arr[i + 1][j - 1]
+            f = arr[i + 1][j]
+            g = arr[i + 1][j + 1]
 
-                if (a == 1) and (b == 1) and (c == 1) and (e == 1) and (f == 1) and (g == 1):
-                    result += 1
+            if (a == val) and (b == val) and (c == val) and (e == val) and (f == val) and (g == val):
+                result += 1
 
     return result
 if __name__ == "__main__":
