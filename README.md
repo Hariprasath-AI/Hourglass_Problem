@@ -34,7 +34,7 @@ The ((n - 2) * (n - 2)) hourglass sums are:\
 -27, -11, -2, 10,
   9,  17, 25, 18
 ```
-The highest hourglass sum is  from the hourglass beginning at (1,1) and ends at (n-2,n-2) :
+The highest hourglass sum is 28 from the hourglass beginning at (1,1) and ends at (n-2,n-2) :
 Here n is the length of row/column
 ```
 0 4 3
