@@ -1,5 +1,5 @@
 # Hourglass_Problem
-Given a n * n 2D Array, arr:
+Given a n * n 2D Array, arr:\
 1 1 1 0 0 0\
 0 1 0 0 0 0\
 1 1 1 0 0 0\
@@ -47,4 +47,40 @@ int: the maximum hourglass sum\
 
 Each of the n lines of inputs arr[i] contains n space-separated integers arr[i][j].\
 
+# Constraints
+-9 <= arr[i][j] <= 9
+0 <= i,j <= 5 
+
+# Output Format
+Print the largest (maximum) hourglass sum found in arr.
+
+# Sample Input
+1 1 1 0 0 0\
+0 1 0 0 0 0\
+1 1 1 0 0 0\
+0 0 2 4 4 0\
+0 0 0 2 0 0\
+0 0 1 2 4 0
+
+# Sample Output
+19
+
+# Explanation
+arr contains the following hourglasses:
+
+1 1 1  1 1 0  1 0 0  0 0 0\
+- 1 -  - 0 -  - 0 -  - 0 -\
+1 1 1  1 1 0  1 0 0  0 0 0\
+                          \
+0 1 0  1 0 0  0 0 0  0 0 0\
+  1      1      0      0  \
+0 0 2  0 2 4  2 4 4  4 4 0\
+                          \
+1 1 1  1 1 0  1 0 0  0 0 0\
+  0      2      4      4  \
+0 0 0  0 0 2  0 2 0  2 0 0\
+                          \
+0 0 2  0 2 4  2 4 4  4 4 0\
+  0      0      2      0  \
+0 0 1  0 1 2  1 2 4  2 4 0\  
 
