@@ -23,19 +23,18 @@ def hourglass(arr):
             g = arr[i + 1][j + 1]
             
             val = a + b + c + d + e + f + g
-            if val > result:
+            if i == 0:
+                result = val
+            elif val > result:
                 result = val
 
     return result
 if __name__ == "__main__":
-    # Ask for n number of rows to store in the list arr
-    n = int(input())
-
     # 2D arrray
     arr = []
 
     # It gets a sublist i.e., record(row) from the line of input and stores the sublist in arr
-    for i in range(0, n):
+    for i in range(0, 6):
         val = list(map(int, input().split()))
         arr.append(val)
 
