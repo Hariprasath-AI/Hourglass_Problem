@@ -23,7 +23,7 @@ def hourglass(arr):
             g = arr[i + 1][j + 1]
             
             val = a + b + c + d + e + f + g
-            if i == 0:
+            if (i == 1 and j == 1):
                 result = val
             elif val > result:
                 result = val
