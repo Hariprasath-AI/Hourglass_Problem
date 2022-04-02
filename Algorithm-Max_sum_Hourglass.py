@@ -23,6 +23,9 @@ def hourglass(arr):
             g = arr[i + 1][j + 1]
             
             val = a + b + c + d + e + f + g
+
+            # Result value initialization. we can't initialize result value as 0 if zero is greater than minus values.
+            # That's why we are initializing at 1st iteration i.e., candles[1][1]
             if (i == 1 and j == 1):
                 result = val
             elif val > result:
