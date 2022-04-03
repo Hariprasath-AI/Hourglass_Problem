@@ -1,7 +1,4 @@
 def hourglass(arr):
-    # Iniatialze the result value as 0
-    result = 0
-
     # We are considering only inner matrix i.e, from arr[1][1] till arr[len(arr[0] - 1)][len(arr[0] - 1)]
     # That is we are neglecting the outer boundary of the array in this for loop.
     # The shape of hourglass is:
@@ -27,6 +24,11 @@ def hourglass(arr):
             # Result value initialization. we can't initialize result value as 0 if zero is greater than minus values.
             # That's why we are initializing at 1st iteration i.e., candles[1][1]
             if (i == 1 and j == 1):
+                # Iniatialze the result value with the output of 1st hourglass solution i.e., val
+                # NOTE: All the hourglass solution will be compared with the previous result value.
+                #       Imagine the scenario that all the hourglass solution were in negative values.
+                #       If negative solution is compared with zero. The greater value is zero '0'. Everytime it returns 0 in this scenario. 
+                #       To avoid this problem, we have to initialize the result value with the output of 1st hourglass solution. 
                 result = val
             elif val > result:
                 result = val
