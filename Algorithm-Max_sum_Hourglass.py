@@ -28,7 +28,7 @@ def hourglass(arr):
             # And the rest we have to check with previous result value i.e., in try block.
             # If we code 2nd if block as 1st and 1st as 2nd means. At the first iteration there will be a best case time complexity.
             # If it goes for next iteration, it checks whether i and j are == 1. Then only goes for next condition. This will the worst-case scenario.
-            # To avoid this initialization takes place at 2nd if block under the excetion handling mechanism, to avoid the error 'variable result not found'
+            # To avoid this initialization takes place at 2nd if block under the excetion handling mechanism, to avoid the error 'variable result referenced before assignment'
             # Here the 2nd for loop goes n number of times with 2 conditions. The worst-case is, 2 times if condition have to execute everytime except i and j are == 1
             # And the time complexity is 2n - 1.
             # In best case, 1st if condition not satisfies only one time when i and j are == 1. only one time ocuurs in all the scenarios.
