@@ -21,7 +21,7 @@ def hourglass(arr):
             
             val = a + b + c + d + e + f + g
 
-            # Result value initialization. we can't initialize result value as 0 if zero is greater than minus values.
+            # Result value initialization. we can't initialize result value as 0, because zero is greater than minus values.
             # That's why we are initializing at 1st iteration i.e., candles[1][1]
             # There are 2 if conditions in this loop,
             # Prioritizing a condition is important for time complexity. Here i and j == 1 at once.
