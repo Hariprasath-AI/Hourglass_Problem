@@ -11,15 +11,19 @@ def hourglass(arr):
     # Update the result value with val only if the current val is greater than previous result
     for i in range(1, len(arr) - 1):
         for j in range(1, len(arr[0])-1):
-            a = arr[i - 1][j - 1]
-            b = arr[i - 1][j]
-            c = arr[i - 1][j + 1]
-            d = arr[i][j]
-            e = arr[i + 1][j - 1]
-            f = arr[i + 1][j]
-            g = arr[i + 1][j + 1]
-            
-            val = a + b + c + d + e + f + g
+            # Here assigning a calculated value to the variable is waste of memory. 
+            # We can directly call the value in single line without assigning it the variable. Just for our reference
+            """
+            a = arr[i - 1][j - 1]  # top_left
+            b = arr[i - 1][j]      # top
+            c = arr[i - 1][j + 1]  # top_right
+            d = arr[i][j]          # center value
+            e = arr[i + 1][j - 1]  # bottom_left
+            f = arr[i + 1][j]      # bottom
+            g = arr[i + 1][j + 1]  # bottom_right
+            """
+            # No need to store value in a variable..
+            val = arr[i - 1][j - 1] + arr[i - 1][j] + arr[i - 1][j + 1] + arr[i][j] + arr[i + 1][j - 1] + arr[i + 1][j] + arr[i + 1][j + 1]
 
             # Result value initialization. we can't initialize result value as 0, because zero is greater than minus values.
             # That's why we are initializing at 1st iteration i.e., candles[1][1]
