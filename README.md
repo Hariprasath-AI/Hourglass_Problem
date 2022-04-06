@@ -1,4 +1,5 @@
 # Hourglass_Problem
+
 Given a n * n 2D Array, arr:
 ```
 1 1 1 0 0 0
@@ -76,7 +77,7 @@ Print the largest (maximum) hourglass sum found in arr.
 # Sample Output
 19
 
-# Explanation
+# Explanation:
 arr contains the following hourglasses:
 ```
 1 1 1  1 1 0  1 0 0  0 0 0
